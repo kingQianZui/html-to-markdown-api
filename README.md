@@ -22,7 +22,9 @@ https://rapidapi.com/qianzui/html-to-markdown
 ### 2. Make Your First Request
 Copy and paste this into your terminal:
 
+```bash
 curl -X POST "https://markdownapi.ccwu.cc/api/fetch" -H "Content-Type: application/json" -H "x-api-key: YOUR_API_KEY" -d '{"url":"https://example.com"}'
+```
 
 text
 
