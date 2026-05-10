@@ -37,3 +37,75 @@ curl -X POST "https://markdownapi.ccwu.cc/api/fetch" \
   -H "Content-Type: application/json" \
   -H "x-api-key: YOUR_API_KEY" \
   -d '{"url": "https://example.com"}'
+3. Get Clean Markdown
+Response (200 OK):
+
+json
+{
+  "success": true,
+  "url": "https://example.com",
+  "markdown": "# Example Domain\n\nThis domain is for use in ...",
+  "remaining_quota": 99
+}
+📖 Full API Reference
+Endpoint	Method	Description
+/api/fetch	POST	Converts a webpage URL to Markdown
+Request Body (JSON):
+
+Parameter	Type	Required	Description
+url	string	Yes	The full URL of the webpage to convert
+Headers:
+
+Header	Value
+Content-Type	application/json
+x-api-key	Your API key
+🛠️ Tech Stack
+Runtime: Cloudflare Workers
+
+Database: Supabase
+
+API Hub: RapidAPI
+
+💰 Plans
+You can try it out for free, and upgrade as you grow:
+
+Plan	Price	Requests/Month
+Free	$0.00	100
+Pro	$9.99	10,000
+Ultra	$49.99	100,000
+👉 View All Plans & Subscribe
+
+📢 Feedback & Questions
+Found a bug? Have a feature request? Just want to say hi?
+
+💬 Open an Issue
+
+🐦 Twitter: @你的Twitter账号
+
+Happy building! 🎉
+
+text
+
+---
+
+## 📍 粘贴到这里（在 GitHub 上操作）
+
+1. 浏览器打开 `https://github.com/你的用户名/html-to-markdown-api`
+
+2. 如果仓库里**已经有** `README.md`：
+   - 点击 `README.md` 文件名
+   - 点击右上角 **铅笔图标 ✏️**
+   - 把里面原来的内容**全删掉**
+   - **粘贴**上面复制的文案
+
+3. 如果仓库里**还没有** `README.md`：
+   - 点击 **「Add file」** 按钮
+   - 点击 **「Create new file」**
+   - 文件名输入：`README.md`
+   - 在下面的大编辑框里**粘贴**上面复制的文案
+
+4. 拉到页面最底部，点击绿色 **「Commit changes」** 按钮
+
+---
+
+## ✅ 完成
